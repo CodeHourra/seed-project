@@ -1,0 +1,15 @@
+// group名称   --依据实际项目修改
+group'com.jumpcode.seed'
+// 版本号    --依据实际项目修改
+version '1.0.0'
+
+ext {
+    // jar包所在模块名称  --依据实际项目修改
+    jarProjectName = 'seed-demo-project-backend'
+    // jar包发布的实际名称  --依据实际项目修改
+    jarArchivesBaseName =  'seed-demo-project-backend'
+    // jar包版本
+    jarVersion = version
+    // maven仓库地址
+    mavenUrl =  'http://maven.aliyun.com/nexus/content/groups/public/'
+}

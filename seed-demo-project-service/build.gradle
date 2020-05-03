@@ -1,0 +1,16 @@
+apply plugin: "net.ltgt.apt"
+
+group 'com.jumpcode.seed'
+version '1.0.0-SNAPSHOT'
+archivesBaseName = 'seed-demo-project-service'
+
+dependencies {
+    compile project(":seed-demo-project-common")
+    compile project(":seed-demo-project-contract")
+    compile 'org.mapstruct:mapstruct-jdk8:1.2.0.Final'
+    apt 'org.mapstruct:mapstruct-processor:1.2.0.Final'
+
+    test {
+        useTestNG()
+    }
+}

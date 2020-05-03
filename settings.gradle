@@ -1,0 +1,7 @@
+rootProject.name = 'seed-project'
+include 'seed-demo-project-common'
+include 'seed-demo-project-contract'
+include 'seed-demo-project-service'
+include 'seed-demo-project-webapi'
+include 'seed-demo-project-backend'
+

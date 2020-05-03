@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+}
+
+group 'com.jumpcode.seed'
+version '1.0.0-SNAPSHOT'
+archivesBaseName = 'seed-demo-project-backend'
+
+dependencies {
+    // 依赖模块
+    compile project(":seed-demo-project-common")
+    compile project(":seed-demo-project-webapi")
+}

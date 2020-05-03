@@ -1,0 +1,8 @@
+group 'com.jumpcode.seed'
+archivesBaseName = 'seed-demo-project-common'
+
+version '1.0.0-SNAPSHOT'
+
+dependencies {
+
+}

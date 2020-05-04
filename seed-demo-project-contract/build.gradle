@@ -3,5 +3,5 @@ version '1.0.0-SNAPSHOT'
 archivesBaseName = 'seed-demo-project-contract'
 
 dependencies {
-    compile project(":seed-demo-common")
+    compile project(":seed-demo-project-common")
 }

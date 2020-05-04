@@ -2,9 +2,6 @@
 apply from: "./scripts/gradle/config.gradle"
 apply from: "./scripts/gradle/install-hooks.gradle"
 
-group = 'com.jumpcode.seed'
-version = '1.0.0-SNAPSHOT'
-
 buildscript {
     ext {
         springBootVersion = '2.0.2.RELEASE'

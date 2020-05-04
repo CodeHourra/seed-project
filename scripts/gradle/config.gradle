@@ -5,9 +5,9 @@ version '1.0.0'
 
 ext {
     // jar包所在模块名称  --依据实际项目修改
-    jarProjectName = 'seed-demo-project-backend'
+    jarProjectName = 'seed-demo-backend'
     // jar包发布的实际名称  --依据实际项目修改
-    jarArchivesBaseName =  'seed-demo-project-backend'
+    jarArchivesBaseName =  'seed-demo-backend'
     // jar包版本
     jarVersion = version
     // maven仓库地址

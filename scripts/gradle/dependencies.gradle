@@ -1,12 +1,5 @@
 
 configurations {
-    // 所有需要忽略的包定义在此
-    all*.exclude group: 'commons-httpclient'
-    all*.exclude group: 'commons-logging'
-    all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
-    //每次build时检查更新
-    all { resolutionStrategy.cacheChangingModulesFor(0, "seconds") }
-
     developmentOnly
     runtimeClasspath {
         extendsFrom developmentOnly

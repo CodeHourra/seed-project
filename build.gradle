@@ -1,0 +1,32 @@
+// 全局配置信息，依实际项目进行修改
+apply from: "./scripts/gradle/config.gradle"
+apply from: "./scripts/gradle/install-hooks.gradle"
+
+group = 'com.jumpcode.seed'
+version = '1.0.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        springBootVersion = '2.0.2.RELEASE'
+    }
+    repositories {
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url "http://repo.spring.io/release" }
+        maven { url "http://repo.spring.io/milestone" }
+        maven { url "http://repo.spring.io/snapshot" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath ("net.ltgt.gradle:gradle-apt-plugin:0.9")
+    }
+}
+// 所有子项目的通用配置
+subprojects {
+    apply from: "../scripts/gradle/subprojects.gradle"
+    apply from: "../scripts/gradle/dependencies.gradle"
+    //安装钩子
+    build.dependsOn installGitHooks;
+}
+

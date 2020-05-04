@@ -11,7 +11,7 @@ server:
 
 spring:
   application:
-    name: xseed-system1-service
+    name: xseed-system-service
 
   datasource:
     url: jdbc:mysql://106.53.82.244:3306/miniProgram?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true  #业务数据库访问url
